@@ -78,6 +78,7 @@ section {
 }
 .secondary-btn {
   color: var(--secondary-text);
+  /* background-color: var(--bg-white); */
   border: solid 0.2rem var(--secondary-color);
 }
 
@@ -185,6 +186,21 @@ p {
   background-color: var(--bg-black);
 }
 
+.banner_wrapper .home-left-side .social-links a i {
+  font-size: 3rem;
+  margin-right: 1.6rem;
+  cursor: pointer;
+}
+.banner_wrapper .home-left-side .social-links a:nth-child(2) {
+  color: black;
+}
+.banner_wrapper .home-left-side .social-links a:nth-child(3) {
+  color: #e4405f;
+}
+.banner_wrapper .home-left-side .social-links a:nth-child(4) {
+  color: #1da1f2;
+}
+
 /* About Section */
 
 .about-section .about-right-side p {
@@ -247,6 +263,58 @@ p {
   visibility: visible;
   top: 38%;
   left: 38%;
+}
+/* contact section */
+.contact-section .contact-dtls {
+  height: 100%;
+  width: 100%;
+  padding: 15rem 0;
+  background: url(../images/subscribe-bg.webp) no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.contact-section input {
+  padding: 0 2.5rem;
+  line-height: 4.8rem;
+  background: transparent;
+  border: 0.2rem solid var(--bg-white);
+  color: var(--text-white);
+  border-radius: 0.4rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.contact-section .form-control:focus {
+  background: transparent;
+  color: var(--text-white);
+  outline: none;
+  border-color: var(--bg-white);
+}
+.contact-section .form-control::placeholder {
+  color: var(--text-white);
+}
+
+/* footer section */
+.footer-section a {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-black);
+}
+.footer-section a:hover {
+  color: var(--primary-text);
+}
+.social-links a i {
+  font-size: 3rem;
+  margin-right: 1.6rem;
+  cursor: pointer;
+}
+.social-links a:nth-child(2) {
+  color: black;
+}
+.social-links a:nth-child(3):hover {
+  color: #e4405f;
+}
+.social-links a:nth-child(4):hover {
+  color: #1da1f2;
 }
 
 /*Responsive Design*/
