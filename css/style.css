@@ -125,13 +125,21 @@ p {
   line-height: 2.6rem;
 }
 
-/* 2 Navbar-section */
+/* Navbar-section */
 
 .header_wrapper .navbar {
   padding: 1.5rem 0;
 }
-.header_wrapper .navbar-brand img {
+/* .header_wrapper .navbar-brand img {
   max-width: 16rem;
+} */
+.header_wrapper .navbar-brand {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-black);
+}
+.header_wrapper .navbar-brand:hover {
+  color: var(--primary-text);
 }
 
 .header_wrapper .nav-item {
@@ -151,6 +159,7 @@ p {
 }
 
 /* Banner-Section */
+
 .banner_wrapper {
   padding-top: 11rem;
   background: url(../images/home-banner.png) no-repeat;
@@ -177,10 +186,13 @@ p {
 }
 
 /* About Section */
+
 .about-section .about-right-side p {
   margin-bottom: 3rem;
 }
+
 /* Services Section */
+
 .services-section .card {
   border: none;
   background: var(--bg-light);
@@ -191,6 +203,52 @@ p {
   box-shadow: 0 0.9375rem 1.875rem rgb(77 87 222 / 30%);
   background: var(--bg-white);
 }
+
+/* Projects-Section */
+
+.project-section .nav-link {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text-black);
+  margin-right: 2rem;
+}
+.project-section .nav-link.active {
+  background-color: transparent;
+  color: var(--secondary-text);
+}
+.project-section .project-links {
+  position: relative;
+  cursor: pointer;
+}
+.project-section .project-links .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s ease 0s;
+}
+.project-section .project-links:hover .overlay {
+  background: rgba(77, 87, 222, 0.5);
+}
+.project-links .overlay i {
+  font-size: 10rem;
+  color: var(--text-white);
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translateX(-50%, -50%);
+  transition: all 0.4s ease 0s;
+  opacity: 0;
+  visibility: hidden;
+}
+.project-section .project-links:hover i {
+  opacity: 1;
+  visibility: visible;
+  top: 38%;
+  left: 38%;
+}
+
 /*Responsive Design*/
 @media (max-width: 1199.5px) {
   h1 {
@@ -272,5 +330,12 @@ p {
   }
   .banner_wrapper .home-left-side h2::after {
     left: 25%;
+  }
+
+  .project-section h2 {
+    line-height: 2.5rem;
+  }
+  .project-section .nav-link {
+    font-size: 1.2rem;
   }
 }
