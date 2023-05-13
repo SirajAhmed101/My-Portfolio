@@ -172,7 +172,9 @@ p {
   vertical-align: middle;
   align-self: center;
 }
-
+.banner_wrapper .home-left-side h5 {
+  line-height: 0;
+}
 .banner_wrapper .home-left-side h2 {
   position: relative;
 }
